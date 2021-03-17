@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.logo-img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+
+  margin-right: 15px;
+}
+
+/* Home-Section */
+.home-section::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: url(./Images/b.jpg);
+  z-index: -1;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+}
+
+.home-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.heading {
+  transition: all 1s ease-in-out 3s;
+  box-shadow: 8px 8px white;
+  /* padding: 15px; */
+  /* border: 2px solid black; */
+}
+
+.heading h2,
+h5 {
+  /* font-weight: bolder;
+  color: #302e4d; */
+  text-align: center;
+  border: 2px solid black;
+  margin: 10px 8px;
+  padding: 20px 28px;
+  font-weight: bolder;
+  transition: all 1s ease-in-out 3s;
+}
+
+.image-home img {
+  width: 250px;
+  height: 250px;
+  padding-top: 15px;
+  margin: auto;
+  display: block;
+}
+
+/* view Section */
+
+.views-section::before{
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+right: 0;
+top: 0;
+background: url(./Images/d.jpg);
+z-index: -1;
+opacity: 0.3;
+}
+
+.views-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-section {
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* Transfer Section */
+
+.transfer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 80vh;
+  
+}
+
+.transfer-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 60vw;
+  height: 40vh;
+  border: 2px solid black;
+  transition: 0.3s all ease-in-out;
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+
+.option-value {
+  font-weight: bolder;
+  font-size: large;
+  color: #302e4d;
+}
+
+/* contact us page */
+
+.contact-us {
+  width: 100%;
+  height: 100vh;
+  padding: 70px 0;
+  position: relative;
+}
+.contact-us::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(330deg, #16c9f6 55%, #fff 0%);
+  z-index: -1;
+}
+
+.from,.to,.transfer-amount{
+  color: #302e4d;
+  font-weight: 800;
+}
+
+.transfer-body::before{
+   content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+right: 0;
+top: 0;
+background: url(./Images/e.jpg);
+z-index: -1;
+opacity: 0.3;
+}
+
+.transaction-section::before{
+  content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+right: 0;
+top: 0;
+background: url(./Images/e.jpg);
+z-index: -1;
+opacity: 0.3;
+}
+
+
+.a{
+  font-weight: 800;
+  text-transform: capitalize;
+}
+a:hover{
+  color: #e8dfe8;
+  border-bottom: 1px solid #e8dfec;
+}
